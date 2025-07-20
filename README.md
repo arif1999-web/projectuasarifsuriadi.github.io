@@ -1,2 +1,2 @@
-# arifcrud
-tugas crud
+# Project UAS Arif Suriadi
+Mata Kuliah Pemrograman Web
