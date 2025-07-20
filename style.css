@@ -1,0 +1,89 @@
+body {
+    /* Gradasi ungu */
+    background: linear-gradient(to right, #8A2BE2, #4B0082); /* Violet ke Indigo */
+    font-family: 'Inter', sans-serif;
+    color: #fff; /* Warna teks putih untuk kontras */
+}
+
+.form-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang semi-transparan untuk kartu */
+    backdrop-filter: blur(10px); /* Efek blur untuk latar belakang kartu */
+    border-radius: 15px !important; /* Sudut lebih membulat */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border transparan */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.15); /* Latar belakang input semi-transparan */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border input transparan */
+    color: #fff; /* Warna teks input putih */
+    padding: 0.75rem 1.25rem; /* Padding untuk input */
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Warna placeholder */
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #BA55D3; /* MediumOrchid */
+    box-shadow: 0 0 0 0.25rem rgba(186, 85, 211, 0.25); /* Shadow fokus */
+    color: #fff;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.gradient-button {
+    background: linear-gradient(to right, #9370DB, #8A2BE2); /* MediumPurple ke Violet */
+    border: none;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px !important; /* Tombol sangat membulat */
+}
+
+.gradient-button:hover {
+    background: linear-gradient(to right, #8A2BE2, #9370DB); /* Balik gradasi saat hover */
+    transform: translateY(-2px); /* Efek sedikit naik saat hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow saat hover */
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.8); /* Warna hijau sukses semi-transparan */
+    border-color: rgba(40, 167, 69, 0.9);
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.8); /* Warna merah bahaya semi-transparan */
+    border-color: rgba(220, 53, 69, 0.9);
+    color: #fff;
+}
+
+.alert-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.gradient-button-red {
+    background: linear-gradient(to right, #DC3545, #8B0000); /* Merah ke Merah Tua */
+    border: none;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px !important;
+}
+
+.gradient-button-red:hover {
+    background: linear-gradient(to right, #8B0000, #DC3545);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .form-card {
+        padding: 20px;
+    }
+}
